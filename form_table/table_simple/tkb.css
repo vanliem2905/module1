@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+}
+
+.table1{
+    width: 500px;
+}
+
+.col{
+    color: blue;
+    font-size: 25px;
+}
+
+.col1{
+    text-align: left;
+    color: blue;
+}
+
+.col2{
+    text-align: right;
+    color: blue;
+}
+
+.table2{
+    width: 500px;
+}
+
+.date{
+    background-color: yellow;
+}
+
+.day{
+    text-align: left;
+}
+
+.tieude{
+    background-color: orange;
+}

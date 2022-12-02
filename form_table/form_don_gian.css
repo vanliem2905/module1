@@ -1,0 +1,15 @@
+body{
+    background-color: lightskyblue;
+}
+.form{
+color: aliceblue;
+    background-color: red;
+    text-align: center;
+}
+table{
+text-align: right;
+background-color: white;
+}
+th{
+text-align: left;
+}

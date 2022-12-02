@@ -1,0 +1,66 @@
+{
+    margin: 0.5px;
+    padding: 0.5px;
+    font-family: "Lucida Sans", Tahoma, sans-serif;
+    letter-spacing: .01em;
+    font-size: 13px;
+}
+h2{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.info{
+    padding: 0 1% 1.1em 1%;
+    border-bottom: 1px dotted #ccc;
+}
+.inforheader{
+    padding-top: 10px;
+}
+.main{
+    padding: 15px;
+}
+.range1{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 500px;
+    font-size: 15px;
+}
+.title1{
+    font-weight: bold;
+}
+.gender{
+    padding: 6px 0;
+}
+.allgender{
+
+}
+
+.title2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.product,.requently{
+    padding: 10px 0;
+}
+.dollars{
+    width: 120px;
+}
+.see{
+    height: 100px;
+    width: 100%;
+}
+.title3{
+    text-align: center;
+}
+.title4{
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+.tab td{
+    width:120px;
+    height: 50px;
+}
+tr:nth-child(odd){
+    background-color: #ccc;
+}

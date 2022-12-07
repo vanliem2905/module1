@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diem_kt=+prompt("Nhập điểm kiểm tra");
+    let diem_giua_ki=+prompt("Nhập điểm giữa kì");
+    let diem_cuoi_ki=+prompt("Nhập điểm cuối kì");
+    let avg=(diem_kt+(diem_giua_ki*2)+(diem_cuoi_ki*3))/6
+    if (avg>=8){
+        alert("Chúc mừng bạn. Đạt học sinh giỏi nha")
+    }else if (avg>=7.9){
+        alert("Chúc mừng bạn. Đạt học sinh khá")
+    }else if (avg>=6.4){
+        alert("Bạn chỉ đạt học lực trung bình. Cố gắng để đạt học sinh khá nha!!")
+    }else {
+        alert("Bạn bị rớt. Cố gắng học tập để tiến bộ hơn nha!!")
+    }
+</script>
+
+</body>
+</html>

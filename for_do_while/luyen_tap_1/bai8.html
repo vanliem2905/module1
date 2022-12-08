@@ -6,21 +6,27 @@
 </head>
 <body>
 <script>
-    let number=+prompt("Trò chơi đoán số từ 0- ")
-    let check= +prompt("Nhập số bạn đoán")
-    let ramDom=Math.floor(Math.random()*number);
-    for (let i=0;i<=3;i++){
-       if (ramDom==check){
-           alert("Bạn đã đoán đúng")
-       }else if (ramDom!=check){
-           alert("Bạn đã đoán sai. Xin đoán lại.")
-           check=+prompt("Nhập số bạn đoán.")
-       }if (i==4){
-           alert("Bạn đã hết lượt")
-            break
+    let flag = true;
+    do {
+        alert("Start");
+        let number = +prompt("Trò chơi đoán số từ 0- ")
+        let check = +prompt("Nhập số bạn đoán")
+        let ramDom = Math.floor(Math.random() * number);
+        for (let i = 0; i <= 3; i++) {
+            if (ramDom === check) {
+                alert("Bạn đã đoán đúng")
+            } else if (ramDom !== check) {
+                alert("Bạn đã đoán sai. Xin đoán lại.")
+                check = +prompt("Nhập số bạn đoán.")
+            }
+            if (i === 3) {
+                alert("Bạn đã hết lượt")
+                break
+            }
         }
-    }
-    document.write("Bạn đã hết lượt")
+        flag = confirm("Bạn có muốn chơi nữa ko?");
+
+    } while (flag)
 </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +prompt("Nhập số tiền bạn muốn gửi: ");
+    let month = +prompt("Nhập số tháng bạn muốn gởi (lãi suất 6.1%): ")
+    let lai_suat = 0;
+    let tong_lai = lai_suat;
+    if (month > 1) {
+        for (i = 1; i <= month; i++) {
+            lai_suat = ((tong_lai + money) * (6.1 / 12)) / 100;
+            tong_lai += lai_suat;
+            document.write("Tiền lãi tháng: " + i + " là " + lai_suat.toFixed(5) + " VND<br>")
+        }
+    }
+    document.write("Số tiền bạn gửi là: " + money + "VND trong " + month + " tháng có tổng số lãi là: " + tong_lai.toFixed(2) + "VND")
+</script>
+</body>
+</html>

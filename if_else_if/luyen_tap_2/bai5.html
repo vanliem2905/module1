@@ -8,7 +8,10 @@
 <script>
     let a = +prompt("Nhập cạnh 1");
     let b = +prompt("Nhập cạnh 2");
-    let s = a * b / 2;
+    let s;
+    if (a > 0 && b > 0) {
+        s = a * b / 2;
+    }
     document.write("Diện tích tam giác vuông là: " + s);
 </script>
 </body>

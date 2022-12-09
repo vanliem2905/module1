@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Translate</h1>
+<input id="english" type="text">
+<input onclick="check()" type="button" value="Dịch">
+<br><br>
+<p id="vietnamese"></p>
+<script>
+    let eng = document.getElementById("english");
+    let arr1 = ["how", "old", "are", "you", "i", "am", "fine", "thanks"];
+    let arr2 = ["làm sao", "cũ, cổ xưa, già", "là", "bạn", "tôi", "là", "khỏe", "cảm ơn"];
+    document.write('Chỉ có thể dịch các từ: [' + arr1.join(" ") + ']');
+    let count = 0;
+
+    function check() {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] == eng.value) {
+                count = 0;
+                document.getElementById("vietnamese").innerHTML = arr2[i];
+                break;
+            } else {
+                count++;
+            }
+        }
+        if (count !== 0) {
+            alert("Không có dữ liệu.");
+        }
+
+    }
+</script>
+</body>
+</html>

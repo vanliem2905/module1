@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let numb = +prompt("Nhập số bạn cần kiểm tra: ");
+
+    function Check(numb) {
+        let result = numb;
+        if (numb === 0 || numb === 1) {
+            return 1;
+        }
+        while (numb > 1) {
+            numb--;
+            result *= numb;
+        }
+        return result;
+    }
+
+    let ketQua = Check(numb);
+    document.write("Giai thừa của " + numb + " là: " + ketQua);
+</script>
 </body>
 </html>

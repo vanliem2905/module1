@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập chuỗi: ");
+    let str1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let str2 = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for (let i = 0; i < str.length; i++) {
+        if (str1.indexOf(str[i]) !== -1) {
+            result.push(str[i].toLowerCase());
+        } else if (str2.indexOf(str[i]) !== -1) {
+            result.push(str[i].toUpperCase());
+        } else {
+            result.push(str[i]);
+        }
+    }
+    alert(result.join(""));
+</script>
+</body>
+</html>

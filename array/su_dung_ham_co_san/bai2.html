@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập độ dài của chuỗi");
+    let str = [];
+    for (let i = 0; i < number; i++) {
+        str[i] = prompt("Nhập phần tử của chuỗi");
+    }
+    for (let i=0;i<number;i++){
+        if (str[i] % 2 === 0 && str[i+1] % 2 === 0) {
+            str.concat("-")
+            i++;
+            number++;
+        }
+    }
+    document.write(str);
+</script>
+</body>
+</html>

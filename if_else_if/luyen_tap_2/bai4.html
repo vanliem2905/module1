@@ -8,7 +8,10 @@
 <script>
     let a = +prompt("Nhập chiều dài");
     let b = +prompt("Nhập chiều rộng");
-    let s = a * b;
+    let s;
+    if (a > 0 && b > 0) {
+        s = a * b;
+    }
     document.write("Diện tích hình chữ nhật là: " + s);
 </script>
 </body>

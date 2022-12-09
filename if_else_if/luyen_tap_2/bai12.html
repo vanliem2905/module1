@@ -7,17 +7,21 @@
 <body>
 <script>
     let money = +prompt("Nhập số tiền bạn muốn gửi: ");
-    let month = +prompt("Nhập số tháng bạn muốn gởi (lãi suất 6.1%): ")
+    let month = +prompt("Nhập số tháng bạn muốn gởi: ");
+    let lai = +prompt("Lãi xuất hiện tại:");
     let lai_suat = 0;
     let tong_lai = lai_suat;
+    let sum;
     if (month > 1) {
         for (i = 1; i <= month; i++) {
-            lai_suat = ((tong_lai + money) * (6.1 / 12)) / 100;
+            lai_suat = ((tong_lai + money) * (lai / month)) / 100;
             tong_lai += lai_suat;
-            document.write("Tiền lãi tháng: " + i + " là " + lai_suat.toFixed(5) + " VND<br>");
+            sum = tong_lai + money;
+            document.write("Tiền lãi tháng " + i + " là: " + lai_suat.toFixed(4) + " VND<br><br>");
         }
     }
-    document.write("Số tiền bạn gửi là: " + money + "VND trong " + month + " tháng có tổng số lãi là: " + tong_lai.toFixed(2) + "VND")
+    document.write("Số tiền bạn gửi là: " + money + "VND trong " + month + " tháng có tổng số lãi là: " + tong_lai.toFixed(2) + "VND <br><br>");
+    document.write("Số tiền nhận được là: " + sum);
 </script>
 </body>
 </html>

@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<button onclick="in_hinh_chu_nhat()" type="button">Bắt đầu</button>
+<script>
+    function in_hinh_chu_nhat() {
+        for (let i = 0; i <= 10; i++) {
+            for (let j = 0; j <= 30; j++) {
+                if (i === 0 || i === 10) {
+                    document.write("<a>*<a>");
+                } else {
+                    document.write("<a style='color: white'>*<a>");
+                }
+                if (j === 0 || j === 30) {
+                    document.write("<a>*<a>");
+                }
+            }
+            document.write("<br>");
+        }
+    }
+</script>
 </body>
 </html>

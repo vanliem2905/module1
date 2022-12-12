@@ -6,19 +6,18 @@
 </head>
 <body>
 <script>
-    let number = +prompt("Nhập độ dài của chuỗi");
-    let str = [];
-    for (let i = 0; i < number; i++) {
-        str[i] = prompt("Nhập phần tử của chuỗi");
-    }
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] % 2 === 0 && str[i - 1] % 2 === 0) {
-            str.push("-", str[i]);
+    let number = prompt("Nhập giá trị bạn muốn xử lý:");
+    let arr = [];
+    arr.push(parseInt(number[0]));
+    for (let i = 1; i < number.length; i++) {
+        number[i] = parseInt(number[i]);
+        if (number[i - 1] % 2 === 0 && number[i] % 2 === 0) {
+            arr.push("-", number[i]);
         } else {
-            str.push(str[i]);
+            arr.push(number[i]);
         }
     }
-    document.write(str.join(''));
+    alert(arr.join(''));
 </script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = Number(prompt("Nhập phần tử vào mảng thứ " + i));
+    }
+    let numb_need = Number(prompt("Nhập phần tử bạn cần tìm: "));
+    for (let i = 0; i < 10; i++) {
+        if (numb_need === arr[i]) {
+            for (j=i; j < arr.length - 1; j++) {
+                arr[j] = arr[j + 1];
+                arr[arr.length - 1] = 0;
+            }
+            i--;
+        }
+    }
+    document.write("Mảng sau khi xử lí là: " + arr);
+</script>
+</body>
+</html>

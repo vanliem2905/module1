@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let min = 0;
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Number(prompt("Nhập phần tử mảng thứ " + i));
+    }
+    document.write("Mảng ban đầu là: [" + arr + "]<br>");
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                min = arr[i];
+                arr[i] = arr[j];
+                arr[j] = min;
+            }
+        }
+    }
+    document.write("Mảng sau khi sắp xếp là: ["+arr+"]");
+</script>
+</body>
+</html>

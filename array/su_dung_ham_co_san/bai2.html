@@ -11,14 +11,14 @@
     for (let i = 0; i < number; i++) {
         str[i] = prompt("Nhập phần tử của chuỗi");
     }
-    for (let i=0;i<number;i++){
-        if (str[i] % 2 === 0 && str[i+1] % 2 === 0) {
-            str.concat("-")
-            i++;
-            number++;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] % 2 === 0 && str[i - 1] % 2 === 0) {
+            str.push("-", str[i]);
+        } else {
+            str.push(str[i]);
         }
     }
-    document.write(str);
+    document.write(str.join(''));
 </script>
 </body>
 </html>

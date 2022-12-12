@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr =[];
+    let arrMax=[]
+    for (let i=0;i<10;i++){
+        arr[i]= Number(prompt("Nhập phần tử vào mảng: "))
+    }
+    document.write("Mảng bạn nhập là: ["+arr+"]<br>")
+    for (let i=0;i<arr.length;i++){
+        if (arr[i]>=10){
+            arrMax.push(arr[i])
+        }
+    }
+    document.write("Các phần tử trong mảng >= 10 là: "+arrMax+"<br>")
+</script>
+</body>
+</html>

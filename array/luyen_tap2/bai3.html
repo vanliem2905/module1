@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let length = prompt("Nhập độ dài của mảng: ");
+    let count = 0;
+    for (let i = 0; i < length; i++) {
+        arr[i] = Number(prompt("Nhập phần tử thứ "+i));
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (!isNaN(arr[i])) {
+            count++;
+        }
+    }
+    document.write("Mảng có " + count + " kí tự");
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let v = 1;
+    let flag = true;
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Number(prompt("Nhập phần tử vào mảng"));
+        if (arr[i] === v) {
+            flag = false;
+        }
+    }
+    if (flag === false) {
+        document.write("v is in the array");
+    } else {
+        document.write("v is not in the array");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let max;
+    let index = 0;
+    let avg = 0;
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Number(prompt("Nhập phần tử thứ " + i + " vào mảng"));
+    }
+    document.write("Mảng bạn nhập vào là: [" + arr + "] <br>");
+    max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+        }
+        avg += arr[i];
+    }
+    avg = avg / arr.length;
+
+    document.write("Phần tử lớn nhất trong mảng là : " + max + ". Tại vị trí thứ " + index + " trong mảng <br>");
+    document.write("Trung bình cộng của mảng là: " + avg);
+
+</script>
+</body>
+</html>

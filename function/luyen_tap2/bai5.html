@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timMin(day_so) {
+        let min;
+        for (let i = 0; i < day_so.length; i++) {
+            min = day_so[0];
+            if (day_so[i] < min) {
+                min = day_so[i];
+            }
+        }
+        return min;
+    }
+
+    let day_so = [];
+    for (let i = 0; i < 3; i++) {
+        day_so.push(Number(prompt("Nhập số thứ " + i)));
+    }
+    let min = timMin(day_so);
+    alert("Các số bạn nhập là: " + day_so);
+    alert("Số nhỏ nhất trong dãy là: " + min);
+</script>
+</body>
+</html>

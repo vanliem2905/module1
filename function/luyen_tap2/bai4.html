@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function soSanh(str) {
+        if (str % 2 == 0 || str % 2 == 1) {
+            return true;
+        }
+        return false;
+    }
+
+    let str = prompt("Nhập kí tự cần kiểm tra:");
+    if (soSanh(str)) {
+        alert("Đây là số");
+    } else {
+        alert("Đây là kí tự");
+    }
+</script>
+</body>
+</html>

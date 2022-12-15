@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function area(r, pi) {
+        let S = r * r * pi;
+        return S;
+    }
+
+    function circle(r, pi) {
+        let C = 2 * r * pi;
+        return C;
+    }
+
+    const pi = 3.14;
+    let r = Number(prompt("Nhập Bán Kính Hình Tròn: "));
+    let dienTich = area(r, pi);
+    let chuVi = circle(r, pi);
+    alert(dienTich);
+    alert(chuVi);
+</script>
+</body>
+</html>

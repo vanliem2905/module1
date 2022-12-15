@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiem_tra_ki_tu(mang, ki_tu) {
+        let dem = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (ki_tu === mang[i]) {
+                dem++;
+            }
+        }
+        if (dem > 0) {
+            return dem;
+        }
+        return -1;
+    }
+
+    let mang = [];
+    let n = +prompt("Nhập độ dài mảng: ");
+    for (let i = 0; i < n; i++) {
+        mang[i] = prompt("Nhập phần tử mảng " + i);
+    }
+    let ki_tu = prompt("Nhập kí tự bạn cần kiểm tra: ");
+    alert("Mảng bạn nhập là: "+ mang)
+    let check = kiem_tra_ki_tu(mang, ki_tu);
+    if (check > 0) {
+        alert("Có " + check + " Ký tự " + ki_tu + " trong mảng");
+    }else {
+        alert("Không có kết quả");
+    }
+</script>
+</body>
+</html>

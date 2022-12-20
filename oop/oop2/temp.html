@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="nhietdo1"></div>
+<div id="nhietdo2"></div>
+</body>
+<script>
+    class Temprature {
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        toF() {
+            return this.celsius * 9 / 5 + 32;
+        }
+
+        toK() {
+            return this.celsius + 273.15;
+        }
+    }
+
+    let temprature = new Temprature(prompt("Nhập nhiệt độ cần kiểm tra:"));
+    let toF = temprature.toF();
+    let toK = temprature.toK();
+    document.getElementById('nhietdo1').innerHTML = 'Độ F: ' + toF;
+    document.getElementById('nhietdo2').innerHTML = 'Độ K: ' + toK;
+</script>
+</html>

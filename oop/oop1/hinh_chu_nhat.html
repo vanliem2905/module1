@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="rectangle"></div>
+<canvas height="200px" id="canvasRectangle" width="200px"></canvas>
+<script>
+    class Rectangle {
+        constructor(long, width) {
+            this.long = long;
+            this.width = width;
+        }
+
+        getlong() {
+            return this.long;
+        }
+
+        getwidth() {
+            return this.width;
+        }
+
+        setlong(long) {
+            this.long = long;
+        }
+
+        setwidth(width) {
+            this.width = width;
+        }
+
+        area() {
+            return this.long * this.width;
+        }
+
+        perimeter() {
+            return (this.long + this.width) * 2;
+        }
+    }
+
+    let a = rectangle.getlong(15);
+    let b = rectangle.setwidth(20);
+    let rectangle = new Rectangle(100, 500);
+    rectangle.setlong(15);
+    rectangle.setwidth(20);
+
+
+    document.getElementById('rectangle').innerHTML = 'Diện tích là: ' + rectangle.area() + '<br> Chu vi là: ' + rectangle.perimeter();
+    document.write("<br><canvas id=\"canvasRectangle\" width=dai height=rong style=\"border:2px solid red;\"></canvas>")
+
+    < /body>
+    < /html>;

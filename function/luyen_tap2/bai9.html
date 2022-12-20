@@ -6,10 +6,10 @@
 </head>
 <body>
 <script>
-    function kiem_tra_ki_tu(mang, ki_tu) {
+    function kiem_tra_ki_tu(mang, kiTu) {
         let dem = 0;
         for (let i = 0; i < mang.length; i++) {
-            if (ki_tu === mang[i]) {
+            if (kiTu === mang[i]) {
                 dem++;
             }
         }
@@ -24,11 +24,11 @@
     for (let i = 0; i < n; i++) {
         mang[i] = prompt("Nhập phần tử mảng " + i);
     }
-    let ki_tu = prompt("Nhập kí tự bạn cần kiểm tra: ");
+    let kiTu = prompt("Nhập kí tự bạn cần kiểm tra: ");
     alert("Mảng bạn nhập là: "+ mang)
-    let check = kiem_tra_ki_tu(mang, ki_tu);
+    let check = kiem_tra_ki_tu(mang, kiTu);
     if (check > 0) {
-        alert("Có " + check + " Ký tự " + ki_tu + " trong mảng");
+        alert("Có " + check + " Ký tự " + kiTu + " trong mảng");
     }else {
         alert("Không có kết quả");
     }
